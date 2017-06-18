@@ -15,15 +15,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[Label Distribution]: ./visual/raw_label_dist.png "Label Distribution"
-[Normalization Sample]: ./visual/norm_sample_image.png "Normalization Sample"
-[Cat 01]: ./visual/cat_01.png "Traffic Sign 1"
-[Cat 04]: ./visual/cat_04.png "Traffic Sign 2"
-[Cat 07]: ./visual/cat_07.png "Traffic Sign 3"
-[Cat 20]: ./visual/cat_20.png "Traffic Sign 4"
-[Cat 21]: ./visual/cat_21.png "Traffic Sign 5"
-[Cat 27]: ./visual/cat_27.png "Traffic Sign 6"
-[Normalized_new_signs]: ./visual/norm_new_signs.png "Normalized New Signs"
+[Label Distribution]: ./visual/raw_label_dist.jpg "Label Distribution"
+[Normalization Sample]: ./visual/norm_sample_image.jpg "Normalization Sample"
+[Cat 01]: ./visual/cat_01.jpg "Traffic Sign 1"
+[Cat 04]: ./visual/cat_04.jpg "Traffic Sign 2"
+[Cat 07]: ./visual/cat_07.jpg "Traffic Sign 3"
+[Cat 20]: ./visual/cat_20.jpg "Traffic Sign 4"
+[Cat 21]: ./visual/cat_21.jpg "Traffic Sign 5"
+[Cat 27]: ./visual/cat_27.jpg "Traffic Sign 6"
+[Normalized_new_signs]: ./visual/norm_new_signs.jpg "Normalized New Signs"
 
 ## Rubric Points
 
