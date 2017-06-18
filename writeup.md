@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
 ---
 
@@ -13,6 +13,18 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
+[//]: # (Image References)
+
+[Label Distribution]: ./data/raw_label_dist.png "Label Distribution"
+[Normalization Sample]: ./data/norm_sample_image.png "Normalization Sample"
+[Cat 01]: ./data/cat_01.png "Traffic Sign 1"
+[Cat 04]: ./data/cat_04.png "Traffic Sign 2"
+[Cat 07]: ./data/cat_07.png "Traffic Sign 3"
+[Cat 20]: ./data/cat_20.png "Traffic Sign 4"
+[Cat 21]: ./data/cat_21.png "Traffic Sign 5"
+[Cat 27]: ./data/cat_27.png "Traffic Sign 6"
+[Normalized_new_signs]: ./data/norm_new_signs.png "Normalized New Signs"
+
 ## Rubric Points
 
 #### Submission Files:
@@ -22,12 +34,12 @@ The project notebook can be found at [Project Notebook](https://github.com/Rob-M
 The German Traffic Sign dataset provides 34,799 training samples, 4,410 validation samples and 12,630 testing samples. These samples are unevenly spread over 43 sign categories. Each sample is an RGB image measuring 32 pixels on a side with an associated label. Below is a histogram of this distribution, by sample set.  
 
 #### Exploratory Visualization:
-[Label Distribution]: ./data/raw_label_dist.png "Label Distribution"
+![alt text][Label Distribution]
 Distribution of labels in provided datasets.  
 
 #### Preprocessing:
 To assist with classification, I converted each image from RGB to Grayscale to reduce the effects of lighting differences and focus the model on shapes rather than colors. In addition, I normalized the pixel values from UINT8 (0 to 255) to FLOAT32 (-1 to 1), reducing the pixel value range the convolutional model needs to handle.   
-[Normalization Sample]: ./data/norm_sample_image.png "Normalization Sample"
+![alt text][Normalization Sample]
 A sample sign, pre- and post-normalized.  
 
 Finally, I one-hot encoded the labels into a sparse array to keep the model from incorrectly assuming the sign label numbers imply structure or order.
@@ -54,16 +66,16 @@ To reach the targeted accuracy of 0.93, I perturbed the images and labels. For l
 At the start of each epoch, the entire Make Batch process was completed, generating a new set of training batches for that epoch. Using this method and the LeNet based model, validation accuracy reached 0.958.
 
 #### Acquiring New Images:
-[Cat 01]: ./data/cat_01.png "Traffic Sign 1"
-[Cat 04]: ./data/cat_04.png "Traffic Sign 2"
-[Cat 07]: ./data/cat_07.png "Traffic Sign 3"
-[Cat 20]: ./data/cat_20.png "Traffic Sign 4"
-[Cat 21]: ./data/cat_21.png "Traffic Sign 5"
-[Cat 27]: ./data/cat_27.png "Traffic Sign 6"
+![alt text][Cat 01]
+![alt text][Cat 04]
+![alt text][Cat 07]
+![alt text][Cat 20]
+![alt text][Cat 21]
+![alt text][Cat 27]
 
 When imported, selected images showed coloration differences from the original dataset, making grayscale a fortutous normalization choice. Each sign is readily identifiable to the eye, though each had to be significantly cropped prior to import into the model. Care was taken to vary the types of signs chosen.  
 
-[Normalized]: ./data/norm_new_signs.png "Normalized New Signs"
+![alt text][Normalized_new_signs]
 
 #### Performance on New Images:
 On the new images, the model only achieved 50% accuracy, correctly identifying 1 of the three circular signs and 2 of the three triangular signs. This is lower than the 0.958 Validation and 0.929 Testing accuracies.  
